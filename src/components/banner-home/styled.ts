@@ -11,7 +11,7 @@ export const Section = styled.section`
     flex-direction: column;
     justify-content: center;
     font-family: 'Fira Code', monospace;
-    // background-attachment: fixed;
+    background-attachment: fixed;
     position: relative;
     z-index: 1;
 
