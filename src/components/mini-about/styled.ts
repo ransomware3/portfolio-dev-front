@@ -24,14 +24,18 @@ export const DivAbout = styled.div`
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
-    animation: Render 1s normal;
+    animation: RenderAbout 1s normal;
 
-    @keyframes Render{
-        from{
+    @keyframes RenderAbout{
+        0%{
             transform: translateY(-60px);
             opacity: 0;
         }
-        to{
+        70%{
+            transform: translateY(-60px);
+            opacity: 0;
+        }
+        100%{
             transform: translateY(0);
             opacity: 1;
         }

@@ -11,7 +11,7 @@ export const Section = styled.section`
     flex-direction: column;
     justify-content: center;
     font-family: 'Fira Code', monospace;
-    background-attachment: fixed;
+    // background-attachment: fixed;
     position: relative;
     z-index: 1;
 
@@ -76,4 +76,9 @@ export const H2 = styled.h2`
             width: 820px;
         }
     }
+`
+
+export const Strong = styled.strong`
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
 `

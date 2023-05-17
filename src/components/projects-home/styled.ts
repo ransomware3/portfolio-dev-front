@@ -1,5 +1,17 @@
 import styled from "styled-components"
 
+export const DivModal = styled.div`
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+`
+
 export const Section = styled.section`
     width: 100%;
     height: 750px;
@@ -23,14 +35,18 @@ export const DivProjects = styled.div`
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
-    animation: Render 1s normal;
+    animation: RenderProjects 1s normal;
 
-    @keyframes Render{
-        from{
+    @keyframes RenderProjects{
+        0%{
             transform: translateY(60px);
             opacity: 0;
         }
-        to{
+        70%{
+            transform: translateY(60px);
+            opacity: 0;
+        }
+        100%{
             transform: translateY(0);
             opacity: 1;
         }
@@ -86,7 +102,7 @@ export const LiProject = styled.li`
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 `
 
-export const StyledAnchor = styled.a`
+export const StyledCard = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
@@ -97,11 +113,32 @@ export const StyledAnchor = styled.a`
     justify-content: center;
     align-items: flex-end;
     color: #fff;
-    padding: 10px;
+    // padding: 10px;
+    cursor: pointer;
 
     &:hover{
         background-color: rgba(0, 0, 0, 0.1);
         box-shadow: 0 0 50px rgba(0,0,0,0.9) inset;
+    }
+`
+
+export const StyledAnchor = styled.a`
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141316;
+    border: 1px solid #7c93d1;
+    color: #7c93d1;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 10px;
+    transition: .2s;
+
+    &:hover{
+        background-color: #000;
+        color: #fff;
     }
 `
 
@@ -110,6 +147,7 @@ export const Pp = styled.p`
     font-family: sans-serif;
     font-weight: bold;
     color: #fff;
+    padding: 10px;
     line-height: 30px;
     text-shadow: 5px 5px 2px #000;
     text-align: center;
