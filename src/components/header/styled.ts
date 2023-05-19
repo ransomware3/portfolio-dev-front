@@ -14,6 +14,22 @@ export const HeaderTag = styled.header`
 
 export const Nav = styled.nav`
     width: 25%;
+
+    @media(max-width: 1260px){
+        width: 35%;
+    }
+
+    @media(max-width: 900px){
+        width: 45%;
+    }
+
+    @media(max-width: 700px){
+        width: 75%;
+    }
+
+    @media(max-width: 440px){
+        width: 80%;
+    }
 `
 
 export const Ul = styled.ul`
@@ -27,4 +43,8 @@ export const StyledLink = styled(Link)`
     font-family: sans-serif;
     font-weight: bold;
     font-size: 14px;
+
+    @media(max-width: 440px){
+        font-size: 12px;
+    }
 `

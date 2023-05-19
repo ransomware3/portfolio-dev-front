@@ -1,17 +1,5 @@
 import styled from "styled-components"
 
-export const DivModal = styled.div`
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-`
-
 export const Section = styled.section`
     width: 100%;
     height: 750px;
@@ -19,6 +7,18 @@ export const Section = styled.section`
     justify-content: center;
     position: relative;
     z-index: 3;
+
+    @media(max-width: 1380px){
+        height: 800px;
+    }
+
+    @media(max-width: 810px){
+        height: 850px;
+    }
+
+    @media(max-width: 670px){
+        height: 900px;
+    }
 `
 
 export const DivProjects = styled.div`
@@ -30,6 +30,7 @@ export const DivProjects = styled.div`
     background-color: #141316;
     display: flex;
     gap: 50px;
+    padding: 0 80px;
     justify-content: center;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -38,28 +39,51 @@ export const DivProjects = styled.div`
     animation: RenderProjects 1s normal;
 
     @keyframes RenderProjects{
-        0%{
+        from{
             transform: translateY(60px);
             opacity: 0;
         }
-        70%{
-            transform: translateY(60px);
-            opacity: 0;
-        }
-        100%{
+        to{
             transform: translateY(0);
             opacity: 1;
         }
+    }
+
+    @media(max-width: 1380px){
+        flex-direction: column;
+        height: 700px;
+        padding: 50px 80px;
+    }
+
+    @media(max-width: 810px){
+        height: 750px;
+        gap: 30px;
+    }
+
+    @media(max-width: 670px){
+        height: 800px;
+    }
+
+    @media(max-width: 610px){
+        padding: 10px 20px
+    }
+
+    @media(max-width: 420px){
+        width: 90%;
+        gap: 50px;
     }
 `
 
 export const TextDiv = styled.div`
     width: 40%;
-    height: 100%;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media(max-width: 1380px){
+        width: 100%;
+    }
 `
 
 export const P = styled.p`
@@ -68,6 +92,26 @@ export const P = styled.p`
     font-family: sans-serif;
     color: #ccc;
     text-shadow: 5px 5px 2px #000;
+
+    @media(max-width: 1565px){
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    @media(max-width: 1050px){
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    @media(max-width: 790px){
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    @media(max-width: 420px){
+        font-size: 15px;
+        line-height: 25px;
+    }
 `
 
 export const Strong = styled.strong`
@@ -80,6 +124,15 @@ export const Projects = styled.div`
     display: flex;
     justify-content: center;
     gap: 10px;
+
+    @media(max-width: 790px){
+        flex-direction: column;
+        gap: 0;
+    }
+
+    @media(max-width: 610px){
+        height: 60%;
+    }
 `
 
 export const UlProjects = styled.ul`
@@ -88,6 +141,20 @@ export const UlProjects = styled.ul`
     position: relative;
     display: flex;
     justify-content: center;
+
+    @media(max-width: 1565px){
+        width: 240px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    @media(max-width: 1380px){
+        width: 50%;
+    }
+
+    @media(max-width: 790px){
+        width: 100%;
+    }
 `
 
 export const LiProject = styled.li`
@@ -100,6 +167,33 @@ export const LiProject = styled.li`
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+    @media(max-width: 1565px){
+        width: 220px;
+        height: 275px;
+        position: static;
+    }
+
+    @media(max-width: 1380px){
+        width: 95%;
+        height: 200px;
+    }
+
+    @media(max-width: 790px){
+        height: 100px;
+    }
+`
+
+export const DivModal = styled.div`
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 `
 
 export const StyledCard = styled.div`
@@ -112,8 +206,6 @@ export const StyledCard = styled.div`
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    color: #fff;
-    // padding: 10px;
     cursor: pointer;
 
     &:hover{
@@ -140,6 +232,15 @@ export const StyledAnchor = styled.a`
         background-color: #000;
         color: #fff;
     }
+
+    @media(max-width: 930px){
+        width: 150px;
+        height: 60px;
+    }
+
+    @media(max-width: 790px){
+        height: 30px;
+    }
 `
 
 export const Pp = styled.p`
@@ -152,4 +253,9 @@ export const Pp = styled.p`
     text-shadow: 5px 5px 2px #000;
     text-align: center;
     opacity: 0.5;
+    
+    @media(max-width: 1050px){
+        font-size: 16px;
+        line-height: 25px;
+    }
 `

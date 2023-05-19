@@ -27,15 +27,11 @@ export const DivAbout = styled.div`
     animation: RenderAbout 1s normal;
 
     @keyframes RenderAbout{
-        0%{
+        from{
             transform: translateY(-60px);
             opacity: 0;
         }
-        70%{
-            transform: translateY(-60px);
-            opacity: 0;
-        }
-        100%{
+        to{
             transform: translateY(0);
             opacity: 1;
         }
