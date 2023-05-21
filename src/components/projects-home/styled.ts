@@ -23,6 +23,7 @@ export const Section = styled.section`
 
 export const DivProjects = styled.div`
     width: 70%;
+    max-width: 1900px;
     height: 655px;
     border: 1px solid #7c93d1;
     position: absolute;

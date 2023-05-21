@@ -3,9 +3,10 @@ import BgSkills from "../../assets/bg-7.png"
 
 export const Section = styled.section`
     width: 100%;
-    height: 500px;
+    height: 600px;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-image: url(${BgSkills});
     background-position: top;
     background-size: cover;
@@ -35,13 +36,29 @@ export const Section = styled.section`
         bottom: 0;
         z-index: 2;
     }
+
+    @media(max-width: 700px){
+        height: 400px;
+    }
 `
 
 export const Ul = styled.ul`
-    width: 70%;
+    width: 60%;
+    max-width: 1800px;
     display: flex;
-    margin-top: 130px;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 150px;
+
+    @media(max-width: 830px){
+        width: 75%;
+    }
+
+    @media(max-width: 700px){
+        justify-content: center;
+    }
 `
 
 export const Li = styled.li`
@@ -53,10 +70,18 @@ export const Li = styled.li`
     flex-direction: column;
     align-items: center;
     gap: 20px;
+
+    @media(max-width: 700px){
+        font-size: 40px;
+    }
 `
 
 export const P = styled.p`
     font-size: 18px;
     font-weight: bold;
     font-family: sans-serif;
+
+    @media(max-width: 700px){
+        font-size: 16px;
+    }
 `

@@ -40,7 +40,7 @@ export const Section = styled.section`
 export const H1 = styled.h1`
     font-size: 65px;
     font-weight: 400;
-    margin-left: 150px;
+    margin-left: 8%;
 
     animation: View 1s normal;
 
@@ -87,7 +87,7 @@ export const H2 = styled.h2`
     border-right: 6px solid rgba(255, 255, 255, 0.5);
     font-size: 45px;
     font-weight: 400;
-    margin-left: 190px;
+    margin-left: 10%;
     white-space: nowrap;
     overflow: hidden;
 

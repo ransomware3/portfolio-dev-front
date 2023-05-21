@@ -14,6 +14,7 @@ export const HeaderTag = styled.header`
 
 export const Nav = styled.nav`
     width: 25%;
+    max-width: 1000px;
 
     @media(max-width: 1260px){
         width: 35%;
