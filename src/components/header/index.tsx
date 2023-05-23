@@ -10,7 +10,7 @@ export const Header = () => (
         <Nav>
             <Ul>
                 <li><StyledLink to="/">INÍCIO</StyledLink></li>
-                <li><StyledLink to="/">PROJETOS</StyledLink></li>
+                <li><StyledLink to="/projetos">PROJETOS</StyledLink></li>
                 <li><StyledLink to="/">REDES PROFISSIONAIS</StyledLink></li>
             </Ul>
         </Nav>
