@@ -1,0 +1,84 @@
+{
+	"Projetos": [
+		{
+			"name": "Pokedados | Dados de pokemons",
+			"sprite": "https://drive.google.com/file/d/1cYhOvlU2MrflpoAMeAvcCvYs18HpNqOX/view?usp=share_link",
+			"description": "esta é uma pokédex",
+			"site": "https://desafio-pokemon-react.vercel.app/",
+			"code": "https://github.com/ransomware3/desafio-pokemon-react",
+			"id": 0
+		},
+		{
+			"name": "Adas Saúde Seguros",
+			"sprite": "https://drive.google.com/file/d/18YW3luVS6tV4l4q_EGefZR0ojlak2ze_/view?usp=share_link",
+			"description": "este é um site de saúde",
+			"site": "https://adas-saude-seguros.vercel.app/",
+			"code": "https://github.com/ransomware3/projeto-adas-saude",
+			"id": 1
+		},
+		{
+			"name": "Buscador Github",
+			"sprite": "https://drive.google.com/file/d/1chCFYN4Zj0mZyOJ5KTEl1G641zrNj2bu/view?usp=share_link",
+			"description": "este é um buscador de perfis",
+			"site": "https://ransomware3.github.io/projeto-fetch-github-api/",
+			"code": "https://github.com/ransomware3/projeto-fetch-github-api",
+			"id": 2
+		},
+		{
+			"name": "App gerador de conselhos",
+			"sprite": "https://drive.google.com/file/d/1aj4lGrzOY7Hl1ENVtUv4DjYi2f48rWfn/view?usp=share_link",
+			"description": "este app gera conselhos",
+			"site": "https://ransomware3.github.io/desafio-advice-generator-app/",
+			"code": "https://github.com/ransomware3/desafio-advice-generator-app",
+			"id": 3
+		},
+		{
+			"name": "Validação formulário com JS",
+			"sprite": "https://drive.google.com/file/d/1uwH7vyMm9MD0I4frgOriT-8fb8JqkLzN/view?usp=share_link",
+			"description": "este é um formulário com validação",
+			"site": "https://ransomware3.github.io/desafio-formulario-js-intermediario/",
+			"code": "https://github.com/ransomware3/desafio-formulario-js-intermediario",
+			"id": 4
+		},
+		{
+			"name": "Marvel jogo de luta",
+			"sprite": "https://drive.google.com/file/d/1QZ6o91q6zugKzm39jLv5s5tJohar_zC4/view?usp=share_link",
+			"description": "esta é a tela de seleção de um jogo de luta da marvel",
+			"site": "https://ransomware3.github.io/projeto-marvel-jogo-de-luta/",
+			"code": "https://github.com/ransomware3/projeto-marvel-jogo-de-luta",
+			"id": 5
+		},
+		{
+			"name": "Slider cards de pokemon",
+			"sprite": "https://drive.google.com/file/d/192-DP5eRMRni76qsmuOEzXJyAhOs9kKy/view?usp=share_link",
+			"description": "este é um slider pokemon",
+			"site": "https://ransomware3.github.io/projeto-slider-pokemon/",
+			"code": "https://github.com/ransomware3/projeto-slider-pokemon",
+			"id": 6
+		},
+		{
+			"name": "Peão do Valle e Valentin",
+			"sprite": "https://drive.google.com/file/d/1RQ5NERdmLiyISmmNDJ8HXIoO3zOyXB4w/view?usp=share_link",
+			"description": "página da dupla sertaneja Peão do Valle e Valentin",
+			"site": "https://projeto-peaodovalle-e-valentin.vercel.app/",
+			"code": "https://github.com/ransomware3/projeto-peaodovalle-e-valentin",
+			"id": 7
+		},
+		{
+			"name": "Componente de classificação interativo",
+			"sprite": "https://drive.google.com/file/d/1DiJx7Ob7b1ucQmyDrINN-wi7i2j1Sw8n/view?usp=share_link",
+			"description": "este é um componente de classificação interativo",
+			"site": "https://ransomware3.github.io/componente-de-classificacao-interativo/",
+			"code": "https://github.com/ransomware3/componente-de-classificacao-interativo",
+			"id": 8
+		},
+		{
+			"name": "NFT card preview",
+			"sprite": "https://drive.google.com/file/d/1pP93z_DIUx3vRlEBIcTSPxZDzQ15nl1G/view?usp=share_link",
+			"description": "este é um preview de um card NFT",
+			"site": "https://ransomware3.github.io/nft-card-preview/",
+			"code": "https://github.com/ransomware3/nft-card-preview",
+			"id": 9
+		}
+	]
+}
