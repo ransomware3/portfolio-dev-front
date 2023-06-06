@@ -23,11 +23,12 @@ export const Main = styled.main`
 `
 
 export const Ul = styled.ul`
-    width: 65%;
+    width: 75%;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 150px;
+    gap: 50px;
     padding: 200px 0;
     flex-wrap: wrap;
 `
@@ -39,10 +40,10 @@ export const Li = styled.li`
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
+    position: relative;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    z-index: 3;
 `
 
 export const DivModal = styled.div`
@@ -55,6 +56,9 @@ export const DivModal = styled.div`
     justify-content: center;
     align-items: center;
     gap: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
 `
 
 export const StyledAnchor = styled.a`
@@ -70,4 +74,36 @@ export const StyledAnchor = styled.a`
     font-family: sans-serif;
     border-radius: 10px;
     transition: .2s;
+`
+
+export const Img = styled.img`
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+`
+
+export const BtnAnchor = styled.a`
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7c93d1;
+    border: 1px solid #7c93d1;
+    background-color: #141316;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 25px;
+    bottom: 50px;
+    right: 100px;
+    z-index: 5;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+    &:hover{
+        transform: scale(1.1);
+    }
 `

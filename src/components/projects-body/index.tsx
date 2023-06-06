@@ -1,23 +1,14 @@
 import { useState } from "react"
-import { Header } from "../header"
-import { Footer } from "../footer"
-// import Bg0 from "../../assets/0.png"
-// import Bg1 from "../../assets/1.png"
-// import Bg2 from "../../assets/2.png"
-// import Bg3 from "../../assets/3.png"
-// import Bg4 from "../../assets/4.png"
-// import Bg5 from "../../assets/5.png"
-// import Bg6 from "../../assets/6.png"
-// import Bg7 from "../../assets/7-poke2.png"
-// import Bg8 from "../../assets/8.png"
-// import Bg9 from "../../assets/9.png"
+import { IoIosArrowUp } from "react-icons/io"
 import projects from "../../json/list.json"
 import {
     Main,
     Ul,
     Li,
     DivModal,
-    StyledAnchor
+    StyledAnchor,
+    Img,
+    BtnAnchor
 } from "./styled"
 
 export const ProjectsBody = () => {
@@ -34,14 +25,14 @@ export const ProjectsBody = () => {
     }
 
 
-    const test = projectsList.map(item => {
+    const ProjectsLi = projectsList.map(item => {
         return (
             <Li onClick={() => toggleModal(item.id)} key={item.id}>
-                {item.sprite}
+                <Img src={item.sprite}></Img>
                 {openModal[item.id] && (
                     <DivModal>
-                        <StyledAnchor target="_blank" href="https://google.com">teste</StyledAnchor>
-                        <StyledAnchor target="_blank" href="https://google.com">teste2</StyledAnchor>
+                        <StyledAnchor target="_blank" href={item.site}>IR PARA O SITE</StyledAnchor>
+                        <StyledAnchor target="_blank" href={item.code}>CÓDIGO ESCRITO</StyledAnchor>
                     </DivModal>
                 )}
             </Li>
@@ -50,12 +41,9 @@ export const ProjectsBody = () => {
 
 
     return (
-        <>
-            <Header />
-            <Main>
-                <Ul>{test}</Ul>
-            </Main>
-            <Footer />
-        </>
+        <Main>
+            <Ul>{ProjectsLi}</Ul>
+            <BtnAnchor href="#top"><IoIosArrowUp /></BtnAnchor>
+        </Main>
     )
 }

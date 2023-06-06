@@ -1,0 +1,11 @@
+.modal{
+    display: none;
+}
+
+.box{
+    display: none;
+}
+
+.box:checked ~ .modal{
+    display: flex;
+}

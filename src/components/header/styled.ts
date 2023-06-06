@@ -39,6 +39,12 @@ export const Ul = styled.ul`
     justify-content: space-between;
 `
 
+export const Li = styled.li`
+    position: relative;
+    display: flex;
+    justify-content: center;
+`
+
 export const StyledLink = styled(Link)`
     color: #ccc;
     font-family: sans-serif;
@@ -47,5 +53,50 @@ export const StyledLink = styled(Link)`
 
     @media(max-width: 440px){
         font-size: 12px;
+    }
+`
+
+export const Label = styled.label`
+    cursor: pointer;
+    color: #ccc;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+
+    @media(max-width: 440px){
+        font-size: 12px;
+    }
+`
+
+export const Modal = styled.ul`
+    width: 300px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #141316;
+    border: 1px solid #7c93d1;
+    border-radius: 8px;
+    position: absolute;
+    top: 30px;
+
+    @media (max-width: 578px) {
+        right: 20px;
+    }
+
+    @media (max-width: 394px) {
+        right: 0px;
+    }
+`
+
+export const Anchor = styled.a`
+    color: #ccc;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .2s;
+
+    &:hover{
+        color: #fff;
     }
 `
