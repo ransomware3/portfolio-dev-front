@@ -196,6 +196,9 @@ export const DivModal = styled.div`
     justify-content: center;
     align-items: center;
     gap: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
 `
 
 export const StyledCard = styled.div`
@@ -209,6 +212,7 @@ export const StyledCard = styled.div`
     justify-content: center;
     align-items: flex-end;
     cursor: pointer;
+    position: relative;
 
     &:hover{
         background-color: rgba(0, 0, 0, 0.1);
@@ -255,6 +259,9 @@ export const Pp = styled.p`
     text-shadow: 5px 5px 2px #000;
     text-align: center;
     opacity: 0.5;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     
     @media(max-width: 1050px){
         font-size: 16px;
@@ -266,6 +273,7 @@ export const Img = styled.img`
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    aspect-ratio: 3/4;
+    // background-repeat: no-repeat;
+    // background-size: cover;
 `

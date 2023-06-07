@@ -95,6 +95,7 @@ export const ProjectsHome = () => {
                                 return (
                                     <LiProject>
                                         <StyledCard onClick={() => toggleModal(item.id)}>
+                                            <Img src={item.miniSprite}></Img>
                                             {openModal[item.id] ? (
                                                 <DivModal>
                                                     <StyledAnchor href={item.site} target="_blank">IR PARA O SITE</StyledAnchor>
@@ -102,8 +103,7 @@ export const ProjectsHome = () => {
                                                 </DivModal>
                                             ) : (
                                                 <>
-                                                    <Img src={item.miniSprite}></Img>
-                                                    {/* <Pp>{item.name}</Pp> */}
+                                                    <Pp>{item.name}</Pp>
                                                 </>
                                             )}
                                         </StyledCard>
