@@ -1,0 +1,20 @@
+{
+	"Projetos": [
+		{
+			"name": "Pokédex - Poke API",
+			"miniSprite": "https://raw.githubusercontent.com/ransomware3/portfolio-dev-front/a379644cff5d87dc381df1c7175f4db6f39c8c74/src/assets/projects-banners/0.png",
+			"description": "esta é uma pokédex",
+			"site": "https://desafio-pokemon-react.vercel.app/",
+			"code": "https://github.com/ransomware3/desafio-pokemon-react",
+			"id": 0
+		},
+		{
+			"name": "Adas Saúde Seguros",
+			"miniSprite": "https://raw.githubusercontent.com/ransomware3/portfolio-dev-front/a379644cff5d87dc381df1c7175f4db6f39c8c74/src/assets/projects-banners/1.png",
+			"description": "este é um site de saúde",
+			"site": "https://adas-saude-seguros.vercel.app/",
+			"code": "https://github.com/ransomware3/projeto-adas-saude",
+			"id": 1
+		}
+	]
+}

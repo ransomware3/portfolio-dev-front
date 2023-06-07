@@ -261,3 +261,11 @@ export const Pp = styled.p`
         line-height: 25px;
     }
 `
+
+export const Img = styled.img`
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+`
