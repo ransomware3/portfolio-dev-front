@@ -13,3 +13,13 @@
 .pokemon{
     background-image: url(../../assets/pokemon.jpg);
 }
+
+@media(min-width: 1565px){
+    .ul-one{
+        top: -50px;
+    }
+
+    .ul-two{
+        top: 50px;
+    }
+}

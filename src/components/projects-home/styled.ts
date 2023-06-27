@@ -143,10 +143,11 @@ export const UlProjects = styled.ul`
     position: relative;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 
     @media(max-width: 1565px){
         width: 240px;
-        flex-direction: column;
         gap: 20px;
     }
 
@@ -165,7 +166,6 @@ export const LiProject = styled.li`
     border-radius: 10px;
     background-size: cover;
     background-position: center;
-    position: absolute;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -253,6 +253,8 @@ export const Pp = styled.p`
     font-size: 20px;
     font-family: sans-serif;
     font-weight: bold;
+    background-color: #333;
+    border-radius: 10px;
     color: #fff;
     padding: 10px;
     line-height: 30px;
@@ -273,7 +275,4 @@ export const Img = styled.img`
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    aspect-ratio: 3/4;
-    // background-repeat: no-repeat;
-    // background-size: cover;
 `
